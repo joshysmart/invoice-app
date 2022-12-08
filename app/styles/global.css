@@ -16,6 +16,7 @@
   --seperator: #494E6E;
   --input-bg: hsl(233, 30%, 21%);
   --border: #DFE3FA;
+  --invoices: #fff;
 
   --dark-purple: #7C5DFA;
   --ligh-purple: #9277FF;
@@ -29,6 +30,7 @@
   --table-bg-footer: #252945;
   --text: #fff;
   --cards: #141625;
+  --invoices: #1E2139;
   --cards-shadow: #00000040;
   --shady-text: #DFE3FA;
   --border: #1E2139;
@@ -545,7 +547,7 @@ button:hover {
 .container .wrapper .right-section .invoices-wrapper .invoice {
   padding: 24px;
   margin: 0 0 16px 0;
-  background: var(--cards);
+  background: var(--invoices);
   box-shadow: 0px 10px 10px -10px #48549f1a;
   border-radius: 8px;
   transition: all .4s ease-in;
