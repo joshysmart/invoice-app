@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/invoice-app-z7OoyA-CAX)
-- Live Site URL: [Add live site URL here](https://invoice-app-joshysmart.vercel.app/invoices)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/invoice-app-z7OoyA-CAX)
+- Live Site URL: [live site URL here](https://invoice-app-joshysmart.vercel.app/invoices)
 
 ## My process
 
