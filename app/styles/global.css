@@ -52,6 +52,7 @@ body {
 .container {
   background: var(--background);
   color: var(--text);
+  transition: all .4s ease-in;
 }
 
 /* .dark-theme {
@@ -64,6 +65,7 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: var(--shady-text);
+  transition: all .4s ease-in;
 }
 
 .container :where(h1, h2, h3) {
@@ -72,6 +74,7 @@ body {
   line-height: 22px;
   letter-spacing: -0.625px;
   color: var(--text);
+  transition: all .4s ease-in;
 }
 
 a {
@@ -145,6 +148,7 @@ button {
   justify-content: space-between;
   background: #373B53;
   padding: 0 24px 0 0;
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -273,6 +277,7 @@ button {
 
 .container .wrapper .edit-section {
   background: var(--background);
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -328,6 +333,7 @@ button {
   outline: 0;
   font-weight: 700;
   color: var(--text);
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -444,6 +450,7 @@ button {
   padding: 0 12px 0 8px;
   border-radius: 24px;
   /* position: relative; */
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .header .sign-up {
@@ -459,6 +466,7 @@ button {
   padding: 12px 24px;
   background: var(--dark-purple);
   border-radius: 24px;
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -536,6 +544,7 @@ button {
   background: var(--cards);
   box-shadow: 0px 10px 10px -10px #48549f1a;
   border-radius: 8px;
+  transition: all .4s ease-in;
 }
 
 /* .dark-theme .wrapper .right-section .invoices-wrapper .invoice {
@@ -559,14 +568,17 @@ button {
 .container .wrapper .right-section .bold {
   color: var(--text);
   font-weight: 700;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .hash {
   color: var(--hash-text);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .invoice-due-date {
   color: var(--shady-text);
+  transition: all .4s ease-in;
 }
 
 /* .dark-theme .wrapper .right-section .invoice-due-date {
@@ -667,6 +679,7 @@ button {
 
 .container .wrapper .right-section .paid-text {
   color: #33d6a0;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .draft-rect {
@@ -691,6 +704,7 @@ button {
 
 .dark-theme .wrapper .right-section .draft-text {
   color: #DFE3FA;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .pending-rect {
@@ -703,6 +717,7 @@ button {
 
 .container .wrapper .right-section .pending-text {
   color: #FF8F00;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .go-back {
@@ -725,7 +740,7 @@ button {
   width: 100%;
   padding: 16px 0;
   color: var(--text);
-
+  transition: all .4s ease-in;
 }
 
 
@@ -747,10 +762,12 @@ button {
   text-align: right;
   background-image: url("/assets/icon-arrow-left.svg");
   background-repeat: no-repeat;
+  transition: all .4s ease-in;
 }
 
 .dark-theme .wrapper .right-section .go-back button {
   color: var(--btn-text);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-grid {
@@ -798,6 +815,7 @@ button {
   grid-area: status;
   margin: 0 0 16px 0;
   background: var(--cards);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-controls {
@@ -814,6 +832,7 @@ button {
   line-height: 15px;
   letter-spacing: -0.25px;
   background: var(--cards);
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -837,23 +856,27 @@ button {
 .container .wrapper .right-section .view-controls .edit button {
   Width: 73px;
   background: #F9FAFE;
+  transition: all .4s ease-in;
 }
 
 .dark-theme .wrapper .right-section .view-controls .edit button {
   background: #252945;
   color: #DFE3FA;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-controls .delete button {
   width: 89px;
   background: #EC5757;
   color: #fff;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-controls .mark-paid button {
   width: 149px;
   background: var(--dark-purple);
   color: #fff;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-invoice-desc {
@@ -861,6 +884,7 @@ button {
   padding: 24px;
   margin: 0 0 150px 0;
   background: var(--cards);
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -938,14 +962,17 @@ button {
   letter-spacing: -0.25px;
   overflow: hidden;
   border-radius: 8px;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-invoice-desc .item-table th {
   color: var(--shady-text);
+  transition: all .4s ease-in;
 }
 
 .dark-theme .wrapper .right-section .view-invoice-desc .item-table {
   background: #252945;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .view-invoice-desc .item-table .invoice-table {
@@ -1027,6 +1054,7 @@ button {
   height: 80px;
   color: #fff;
   background: var(--table-bg-footer);
+  transition: all .4s ease-in;
 }
 
 .dark-theme .wrapper .right-section .view-invoice-desc .item-table .invoice-table tfoot {
@@ -1062,6 +1090,7 @@ button {
   align-items: center;
   color: #858BB2;
   padding: 24px;
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1073,11 +1102,12 @@ button {
 
 .container .wrapper .right-section .view-heading .status .status-text {
   color: var(--status-text);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .add-invioce {
-  background: var(--cards);
-
+  background: var(--background);
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1098,6 +1128,7 @@ button {
 
 .container .wrapper .right-section .edit-invioce {
   background: var(--background);
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1183,6 +1214,8 @@ button {
   border-radius: 4px;
   outline: 0;
   cursor: pointer;
+  transition: all .4s ease-in;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section input:focus {
@@ -1202,6 +1235,7 @@ button {
   border: 1px solid #252945;
   border-radius: 4px;
   color: #FFFFFF;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .date-input {
@@ -1277,6 +1311,7 @@ button {
 
 .container .wrapper .right-section .invoice-date .date-rect .dates .date-nos:hover {
   color: var(--dark-purple);
+  transition: all .4s ease-in;
 }
 
 
@@ -1303,6 +1338,7 @@ button {
   box-shadow: 0px 10px 20px var(--cards-shadow);
   border-radius: 8px;
   transform: scaleY(0);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .terms-rect-focus {
@@ -1314,10 +1350,12 @@ button {
   border-bottom: 1px solid var(--border);
   color: var(--text);
   cursor: pointer;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .terms-rect .net-days p:hover {
   color: var(--dark-purple);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .error {
@@ -1327,7 +1365,7 @@ button {
 
 .container .wrapper .right-section .error .error-msg {
   color: #EC5757;
-
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1349,6 +1387,7 @@ button {
   font-weight: 600;
   line-height: 15px;
   color: #EC5757;
+  transition: all .4s ease-in;
 
 }
 
@@ -1360,6 +1399,7 @@ button {
   font-weight: 700;
   color: var(--dark-purple);
   margin: 0 0 24px 0;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section label {
@@ -1368,6 +1408,7 @@ button {
   line-height: 15px;
   color: var(--shady-text);
   text-transform: capitalize;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .bill-from {
@@ -1570,6 +1611,7 @@ button {
   background-repeat: no-repeat;
   background-position: 0 50%;
   cursor: pointer;
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .item-list table .del-icon:hover {
@@ -1589,6 +1631,7 @@ button {
   border: 0;
   outline: 0;
   border-radius: 24px;
+  transition: all .4s ease-in;
 }
 
 .dark-theme .wrapper .right-section .item-list .add-new {
@@ -1627,6 +1670,7 @@ button {
   justify-content: flex-end;
   padding: 24px;
   background: #fff;
+  transition: all .4s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1802,6 +1846,8 @@ button {
   box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
   border-radius: 8px;
   letter-spacing: -0.25px;
+  transition: all .4s ease-in;
+
 }
 
 @media only screen and (min-width: 768px) {

@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import globalStylesUrl from "~/styles/global.css";
 
@@ -24,12 +24,18 @@ export const meta = () => ({
 export default function App() {
   const containerEl = useRef(null);
   const wrapperEL = useRef(null);
-  const [theme, setDarktheme] = useState(false);
+  const [darkTheme, setDarktheme] = useState(false);
 
   function handleTheme(e) {
-    setDarktheme(!theme);
+    setDarktheme(!darkTheme);
+    localStorage.setItem("preferDarkTheme", darkTheme ? "false" : "true");
     console.log(containerEl);
   }
+
+  useEffect(() => {
+    const preferDarkTheme = localStorage.getItem("preferDarkTheme");
+    preferDarkTheme === "true" && setDarktheme(true);
+  }, []);
 
   return (
     <html lang="en">
@@ -38,7 +44,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className={`container ${theme && "dark-theme"}`} ref={containerEl}>
+        <div
+          className={`container ${darkTheme && "dark-theme"}`}
+          ref={containerEl}
+        >
           <div className="wrapper" ref={wrapperEL}>
             <aside className="left-section">
               <div className="logo"></div>
