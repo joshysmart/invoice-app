@@ -28,7 +28,7 @@
   --table-bg: #252945;
   --table-bg-footer: #252945;
   --text: #fff;
-  --cards: #1E2139;
+  --cards: #141625;
   --cards-shadow: #00000040;
   --shady-text: #DFE3FA;
   --border: #1E2139;
@@ -83,6 +83,10 @@ a {
 
 button {
   cursor: pointer;
+}
+
+button:hover {
+  opacity: .5;
 }
 
 .lg-view,
@@ -733,6 +737,7 @@ button {
 
 .container .wrapper .right-section .go-back-sm {
   background: var(--cards);
+  transition: all .4s ease-in;
 }
 
 .container .wrapper .right-section .go-back a {
@@ -1106,7 +1111,7 @@ button {
 }
 
 .container .wrapper .right-section .add-invioce {
-  background: var(--background);
+  background: var(--cards);
   transition: all .4s ease-in;
 }
 
@@ -1127,7 +1132,7 @@ button {
 }
 
 .container .wrapper .right-section .edit-invioce {
-  background: var(--background);
+  background: var(--cards);
   transition: all .4s ease-in;
 }
 
@@ -1632,6 +1637,10 @@ button {
   outline: 0;
   border-radius: 24px;
   transition: all .4s ease-in;
+}
+
+.container .wrapper .right-section .item-list .add-new:hover {
+  background: #DFE3FA;
 }
 
 .dark-theme .wrapper .right-section .item-list .add-new {
