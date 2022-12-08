@@ -397,6 +397,10 @@ button:hover {
   /* cursor: pointer; */
 }
 
+.container .wrapper .right-section .header .invoice-controls .stat-rect .checkbox input {
+  display: none;
+}
+
 .container .wrapper .right-section .header .invoice-controls .stat-rect .checkbox:last-child {
   margin: 0;
 }
@@ -418,7 +422,7 @@ button:hover {
 .container .wrapper .right-section .header .invoice-controls .stat-rect .checkbox .checked-status {
   display: block;
   cursor: pointer;
-  margin: 0 10px 0 13px;
+  margin: 0 10px 0 25px;
 }
 
 .container .wrapper .right-section .header .invoice-controls .stat-rect .checkbox .checked-status:before {
@@ -1822,7 +1826,7 @@ button:hover {
 }
 
 .container .wrapper .open {
-  transform: translateX(0);
+  transform: scale(1);
 }
 
 .container .wrapper .right-section .hide {
@@ -1842,55 +1846,56 @@ button:hover {
 } */
 
 
-.container .wrapper .deletion-modal .modal-wrapper {
+.container .wrapper .deletion-modal .my-modal-wrapper {
   padding: 32px 24px;
   background: #FFFFFF;
   box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
   border-radius: 8px;
   letter-spacing: -0.25px;
   transition: all .4s ease-in;
+  z-index: 1;
 
 }
 
 @media only screen and (min-width: 768px) {
-  .container .wrapper .deletion-modal .modal-wrapper {
+  .container .wrapper .deletion-modal .my-modal-wrapper {
     padding: 48px;
   }
 }
 
 
-.dark-theme .wrapper .deletion-modal .modal-wrapper {
+.dark-theme .wrapper .deletion-modal .my-modal-wrapper {
   background: #1E2139;
   box-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.100397);
 }
 
-.container .wrapper .deletion-modal .modal-wrapper .confirm-text {
+.container .wrapper .deletion-modal .my-modal-wrapper .confirm-text {
   line-height: 32px;
   margin: 0 0 8px 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .container .wrapper .deletion-modal .modal-wrapper .confirm-text {
+  .container .wrapper .deletion-modal .my-modal-wrapper .confirm-text {
     font-size: 24px;
   }
 }
 
-.container .wrapper .deletion-modal .modal-wrapper .warn-text {
+.container .wrapper .deletion-modal .my-modal-wrapper .warn-text {
   line-height: 22px;
   margin: 0 0 24px 0;
 }
 
-.dark-theme .wrapper .deletion-modal .modal-wrapper .warn-text {
+.dark-theme .wrapper .deletion-modal .my-modal-wrapper .warn-text {
   color: #888EB0;
 }
 
-.container .wrapper .deletion-modal .modal-wrapper .del-buttons {
+.container .wrapper .deletion-modal .my-modal-wrapper .del-buttons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.container .wrapper .deletion-modal .modal-wrapper .del-buttons button {
+.container .wrapper .deletion-modal .my-modal-wrapper .del-buttons button {
   width: 91px;
   padding: 16px 0;
   border-radius: 24px;
@@ -1898,16 +1903,16 @@ button:hover {
   outline: 0;
 }
 
-.container .wrapper .deletion-modal .modal-wrapper .del-buttons .cancel {
+.container .wrapper .deletion-modal .my-modal-wrapper .del-buttons .cancel {
   background: #F9FAFE;
 }
 
-.dark-theme .wrapper .deletion-modal .modal-wrapper .del-buttons .cancel {
+.dark-theme .wrapper .deletion-modal .my-modal-wrapper .del-buttons .cancel {
   background: #252945;
   color: #DFE3FA;
 }
 
-.container .wrapper .deletion-modal .modal-wrapper .del-buttons .delete {
+.container .wrapper .deletion-modal .my-modal-wrapper .del-buttons .delete {
   background: #EC5757;
   color: #fff;
   margin: 0 0 0 8px;

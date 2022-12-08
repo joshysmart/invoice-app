@@ -370,7 +370,7 @@ export default function View() {
       </div>
 
       <div className="deletion-modal" ref={deleteModal}>
-        <div className="modal-wrapper">
+        <div className="my-modal-wrapper">
           <h3 className="confirm-text">Confirm Deletion</h3>
           <p className="warn-text">
             Are you sure you want to delete invoice #{viewedInvoice?.invoiceId}?
