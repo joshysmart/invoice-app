@@ -1543,18 +1543,6 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .container .wrapper .right-section .item-list table tr {
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, auto); */
-    /* gap: 16px; */
-    /* align-items: center; */
-    /* border-collapse: collapse; */
-    /* border-spacing: 16px; */
-    /* cp */
-    /* cell-spacing: 16px; */
-  }
-}
 
 
 .container .wrapper .right-section .item-list table .qty-input {
@@ -1927,7 +1915,6 @@ input::-webkit-inner-spin-button {
 }
 
 input {
+  appearance: none;
   -moz-appearance: textfield;
 }
-
-.container .wrapper .right-section .save {}

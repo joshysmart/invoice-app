@@ -5,7 +5,7 @@ import {
 } from "@remix-run/react";
 import { db } from "~/utils/db.server";
 import FormFields from "../../../components/formFields";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { redirect, json } from "@remix-run/node";
 
 const validateName = (clientName) => {

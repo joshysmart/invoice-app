@@ -4,15 +4,6 @@ import { redirect, json } from "@remix-run/node";
 import { Outlet, useActionData, useOutletContext } from "@remix-run/react";
 import { getUser } from "~/utils/sessions.server";
 
-// import { useRef } from "react";
-// import { createRef } from "react/cjs/react.production.min";
-
-// export const action = async ({ request }) => {
-//   const form = await request.formData();
-//   console.log(form);
-//   return redirect("/");
-// };
-
 const validateItems = (items) => {
   if (items.length < 1) {
     return ["- All fields must be added", "- An item must be added"];
@@ -85,7 +76,7 @@ export const action = async ({ request, params }) => {
 
   if (user) {
     try {
-      const updateInvoice = await db.invoice.create({
+      await db.invoice.create({
         data: {
           invoiceId: id,
           userId: user.id,
