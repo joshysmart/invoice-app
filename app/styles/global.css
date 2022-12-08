@@ -749,12 +749,9 @@ button:hover {
 .container .wrapper .right-section .go-back a {
   display: block;
   width: 100%;
-  padding: 16px 0;
   color: var(--text);
   transition: all .4s ease-in;
 }
-
-
 
 .container .wrapper .right-section .add-goback {
   display: none;
@@ -774,6 +771,7 @@ button:hover {
   background-image: url("/assets/icon-arrow-left.svg");
   background-repeat: no-repeat;
   transition: all .4s ease-in;
+  padding: 0;
 }
 
 .dark-theme .wrapper .right-section .go-back button {
