@@ -359,7 +359,7 @@ export default function View() {
             <div className="buttons-rect">
               <div className="gradient-rect"></div>
               <div className="buttons">
-                <button className="cancel">
+                <button className="cancel" onClick={handleEdit}>
                   <a href="#invoice">Cancel</a>
                 </button>
                 <button className="submit">Save channges</button>

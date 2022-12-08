@@ -40,6 +40,7 @@ export const loader = async ({ request }) => {
     }
   }
   return redirect("/auth/login");
+  // return "";
 };
 
 export default function Index() {
@@ -75,13 +76,13 @@ export default function Index() {
       (invoice, i) => invoice.status === value
     );
 
-    newInvoices.length ? setInvoices(newInvoices) : setInvoices(data.invoices);
+    newInvoices?.length ? setInvoices(newInvoices) : setInvoices(data.invoices);
     // setInvoices(newInvoices);
     // !newInvoices.length && setInvoices(data.invoices);
     console.log(e.currentTarget.checked);
   }
 
-  const invoice = invoices.map(function (invoice) {
+  const invoice = invoices?.map(function (invoice) {
     const dateArr = new Date(invoice.paymentDue).toDateString().split(" ");
     return (
       <Link to={`./view/${invoice.id}`} key={invoice.id}>
@@ -138,11 +139,11 @@ export default function Index() {
       <div className={`header ${!success && "hide-for-mobile"}`} ref={headerEl}>
         <div className="invoices-heading">
           <h1 className="">Invoices</h1>
-          {invoices.length ? (
+          {invoices?.length ? (
             <p>
-              <span className="sm-view">{invoices.length} invoices</span>
+              <span className="sm-view">{invoices?.length} invoices</span>
               <span className="lg-view">
-                There are {invoices.length} total invoices
+                There are {invoices?.length} total invoices
               </span>
             </p>
           ) : (
@@ -217,7 +218,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-      {invoices.length ? (
+      {invoices?.length ? (
         <div
           className={`invoices-wrapper ${!success && "hide-for-mobile"}`}
           ref={invoiceWrapperEl}
@@ -256,7 +257,7 @@ export default function Index() {
             <FormFields />
             <div className="error">
               {actionData?.fieldErrors.itemsArr &&
-                actionData?.fieldErrors.itemsArr.map((el, i) => (
+                actionData?.fieldErrors.itemsArr?.map((el, i) => (
                   <p className="error-msg" key={i}>
                     {el}
                   </p>

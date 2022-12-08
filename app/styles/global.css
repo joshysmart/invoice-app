@@ -13,7 +13,7 @@
   --status-text: #858BB2;
   --btn-text: #fff;
   --hash-text: #888EB0;
-  --seperator: #888EB0;
+  --seperator: #494E6E;
   --input-bg: hsl(233, 30%, 21%);
   --border: #DFE3FA;
 
@@ -127,6 +127,18 @@ button {
   min-height: 100vh;
 }
 
+@media only screen and (min-width: 768px) {
+  .container .wrapper {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container .wrapper {
+    flex-direction: row;
+  }
+}
+
 .container .wrapper .left-section {
   display: flex;
   align-items: center;
@@ -138,6 +150,17 @@ button {
 @media only screen and (min-width: 768px) {
   .container .wrapper .left-section {
     padding: 0 48px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container .wrapper .left-section {
+    flex-direction: column;
+    padding: 0 0 24px 0;
+    border-radius: 0 20px 20px 0;
+    max-height: 100vh;
+    height: 100vh;
+    position: fixed;
   }
 }
 
@@ -190,6 +213,14 @@ button {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1280px) {
+  .container .wrapper .left-section .avatar-theme {
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+  }
+}
+
 .container .wrapper .left-section .avatar-theme .theme {
   width: 20px;
   height: 20px;
@@ -207,6 +238,15 @@ button {
   background: var(--seperator);
 }
 
+@media only screen and (min-width: 1280px) {
+  .container .wrapper .left-section .avatar-theme .seperator {
+    width: 100%;
+    height: 1px;
+    background: #494E6E;
+  }
+}
+
+
 .container .wrapper .left-section .avatar-theme .avatar {
   width: 32px;
   height: 32px;
@@ -222,13 +262,22 @@ button {
   position: relative;
 }
 
+@media only screen and (min-width: 768px) {
+  .container .wrapper .right-section {
+    width: 760px;
+    align-self: center;
+    margin: 0 auto;
+    position: static;
+  }
+}
+
 .container .wrapper .edit-section {
   background: var(--background);
 }
 
 @media only screen and (min-width: 768px) {
   .container .wrapper .edit-section {
-    background: var(--cards);
+    background: var(--background);
   }
 }
 
@@ -462,6 +511,12 @@ button {
     width: 243px;
     height: 200px;
     margin: 210px auto 64px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container .wrapper .right-section .invoices-wrapper .empty-illustration {
+    margin: 110px auto auto auto;
   }
 }
 
@@ -1042,15 +1097,17 @@ button {
 }
 
 .container .wrapper .right-section .edit-invioce {
-  background: var(--cards);
+  background: var(--background);
 }
 
 @media only screen and (min-width: 768px) {
   .container .wrapper .right-section .open-overlay {
     width: 100%;
-    height: 100%;
+    /* min-height: 100%; */
     position: absolute;
     top: 0;
+    left: 0;
+    bottom: 0;
     overflow: scroll;
     /* display: none; */
     /* transform: translateX(-1440px) ; */
@@ -1063,12 +1120,22 @@ button {
 
 }
 
+@media only screen and (min-width: 1280px) {
+  .container .wrapper .right-section .open-overlay {
+    left: 80px;
+
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
   .container .wrapper .right-section .edit-invioce {
     width: 616px;
     height: 100%;
     position: absolute;
     top: 0;
+    /* right: 0; */
+    left: 0;
     overflow: scroll;
     /* display: none; */
     /* transform: translateX(-1440px) ; */
@@ -1570,9 +1637,9 @@ button {
 
 @media only screen and (min-width: 768px) {
   .container .wrapper .right-section .buttons {
-    /* width: 616px; */
-    width: 100%;
-    position: absolute;
+    width: 616px;
+    /* width: 100%; */
+    position: fixed;
     bottom: 0;
     /* top: 0; */
     border-radius: 0 0 32px 0;
@@ -1582,7 +1649,7 @@ button {
 
 
 .dark-theme .wrapper .right-section .buttons {
-  background: #1E2139;
+  background: var(--background);
 }
 
 .container .wrapper .right-section button {
@@ -1696,6 +1763,7 @@ button {
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import globalStylesUrl from "~/styles/global.css";
 
@@ -24,9 +24,10 @@ export const meta = () => ({
 export default function App() {
   const containerEl = useRef(null);
   const wrapperEL = useRef(null);
+  const [theme, setDarktheme] = useState(false);
 
   function handleTheme(e) {
-    containerEl.current.classList.toggle("dark-theme");
+    setDarktheme(!theme);
     console.log(containerEl);
   }
 
@@ -37,7 +38,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="container" ref={containerEl}>
+        <div className={`container ${theme && "dark-theme"}`} ref={containerEl}>
           <div className="wrapper" ref={wrapperEL}>
             <aside className="left-section">
               <div className="logo"></div>
